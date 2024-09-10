@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CodeWave/static/css/main.2e02b628.css",
+    "main.js": "/CodeWave/static/js/main.a55c64af.js",
+    "index.html": "/CodeWave/index.html",
+    "main.2e02b628.css.map": "/CodeWave/static/css/main.2e02b628.css.map",
+    "main.a55c64af.js.map": "/CodeWave/static/js/main.a55c64af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e02b628.css",
+    "static/js/main.a55c64af.js"
+  ]
+}
