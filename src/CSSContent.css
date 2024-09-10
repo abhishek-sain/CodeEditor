@@ -1,0 +1,47 @@
+.content {
+    padding: 20px;
+  }
+  
+  .topic {
+    margin-bottom: 40px;
+  }
+  
+  .topic h2 {
+    margin-bottom: 10px;
+  }
+  
+  .topic h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .topic p {
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for code snippets */
+  .code-snippet {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .code-snippet code {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .content-wrapper {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+  

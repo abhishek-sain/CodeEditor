@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #e2e2e2;
+    --secondary-color: #282a36;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    /* margin-top: 40px; */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .nav-heading {
+    margin: 0;
+  }
+  
+  #run {
+    position: fixed;
+    top: 12vh;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #0056b3;
+    z-index: 1000;
+}
+
+#run:hover {
+      background-color: #198754;
+  }
+  
+  .file-nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .file-nav button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #0058a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .file-nav button:hover {
+    background-color: #003d6b;
+  }
+  
+  .editor-structure {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .editor-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    margin-bottom: 10px;
+  }
+  
+  .codeTextArea {
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .output-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .outputTextArea {
+    width: 100%;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 200vh; /* Ensures the output area is at least 200vh */
+  }
+  

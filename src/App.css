@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #e2e2e2;
+  --secondary-color: #282a36;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--secondary-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-heading {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#run {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #198754;
+  color: white;
+  cursor: pointer;
+}
+
+#run:hover {
+  background-color: #0056b3;
+}
+
+.file-nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.file-nav button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: #0058a3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-nav button:hover {
+  background-color: #003d6b;
+}
+
+.editor-structure {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.codeTextArea {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.outputTextArea {
+  width: 100%;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  overflow: auto;
+  height: 200vh;
 }
